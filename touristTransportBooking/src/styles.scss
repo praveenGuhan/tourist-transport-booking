@@ -2,3 +2,33 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.d-flex {
+    display: flex;
+}
+
+// .space-around {
+//     justify-content: space-around;
+// }
+
+.f-16-semibold {
+    font-weight: 600;
+    font-size: 16;
+}
+
+.f-15-regular {
+    font-size: 15px;
+}
+
+.ml-44 {
+    margin-left:44px;
+}
+.space-around {
+    justify-content: space-around;
+    padding: 17px 30px;
+    align-items: center;
+}
+
+.d-center {
+    justify-content: center;
+}

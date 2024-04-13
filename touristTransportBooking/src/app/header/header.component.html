@@ -1,0 +1,12 @@
+<div class="d-flex d-center">
+    <div class="image-container">
+        <img src="../../assets/img/logo.png">
+    </div>
+
+    <div *ngFor="let item of headerArea;let i = index" style="margin-left:15px">
+        <div class="image-container">
+        <mat-checkbox [checked]="true" ><span class="f-16-semibold">{{item.text}}</span></mat-checkbox><br>
+        <span class="f-15-regular ml-44">{{item.subText}}</span>
+        </div>
+    </div>
+</div>
