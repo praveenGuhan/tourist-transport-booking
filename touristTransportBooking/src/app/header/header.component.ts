@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
+import { Component, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
@@ -12,8 +13,11 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  schemas: [NO_ERRORS_SCHEMA]
+  schemas: [NO_ERRORS_SCHEMA],
+  
 })
+
+
 export class HeaderComponent {
  headerArea = [
   {text:'Corporate/Family tours',subText:'Comfort Travel Assured'},

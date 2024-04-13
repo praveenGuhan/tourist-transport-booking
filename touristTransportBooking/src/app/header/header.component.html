@@ -4,9 +4,10 @@
     </div>
 
     <div *ngFor="let item of headerArea;let i = index" style="margin-left:15px">
-        <div class="image-container">
+        <div class="" [ngClass]="{'image-container': i !== headerArea.length - 1}">
         <mat-checkbox [checked]="true" ><span class="f-16-semibold">{{item.text}}</span></mat-checkbox><br>
         <span class="f-15-regular ml-44">{{item.subText}}</span>
         </div>
     </div>
 </div>
+<!-- <app-footer></app-footer> -->
