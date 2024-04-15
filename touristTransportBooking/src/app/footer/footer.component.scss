@@ -1,5 +1,5 @@
 .br-4 {
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid grey;
     height: 4vh;
 }
 
@@ -10,4 +10,13 @@
 
 .sub-text {
     color:#838383;
+}
+
+.bg-color {
+    background-color: #1e73be;
+}
+
+::ng-deep .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background {
+    background: #1e73be !important;
+    border-color: #1e73be !important;
 }

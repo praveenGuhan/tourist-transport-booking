@@ -1,0 +1,108 @@
+<div class="grid-container pt-30">
+    <div class="grid-item w-50">
+        <div class="icon-content-wrapper">
+            <mat-icon class="border-menu">calendar_today</mat-icon>
+            <div class="content">
+                <p>Easy Online Booking</p>
+                <p class="sub-text">Just fill up basic details and choose the dates on our reservation form in this website to book your travel needs.</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid-item w-50">
+        <div class="icon-content-wrapper">
+            <mat-icon class="border-menu">credit_card</mat-icon>
+            <div class="content">
+                <p>Professional Drivers
+                </p>
+                <p class="sub-text">Our drivers are not only professional but also very supportive to ensure your journey is totally comfortable.</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="icon-content-wrapper">
+            <mat-icon class="border-menu">directions_bus</mat-icon>
+            <div class="content">
+                <p>Wide Fleet of Vehicles</p>
+                <p class="sub-text">All our fleet that are in perfect condition before the journey to provide you a safe and pleasant travel experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="icon-content-wrapper">
+            <mat-icon class="border-menu">security</mat-icon>
+            <div class="content">
+                <p>Free Travel Insurance</p>
+                <p class="sub-text">Enjoy your travel in comfort with our free travel insurance that offers life coverage up to Rs. 2 Lacs. Conditions apply.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-align">
+    <p>Our Fleet</p>
+    <p class="sub-text">Choose from our wide range of luxury and budgeted fleet to meet your travel needs.</p>
+    <div class="d-flex space_around p-24">
+        <mat-card class="w-20">
+            <mat-card-header class="card-header">
+              <mat-card-title>Innova</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-Innova.png">
+                <p class="br-1"></p>
+                <p class="p-10 text-left">Innova</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+          </mat-card>
+
+          <mat-card class="w-20">
+            <mat-card-header class="card-header">
+              <mat-card-title>Innova</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-Innova.png">
+                <p class="br-1"></p>
+                <p class="p-10 text-left">Innova</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+          </mat-card>
+
+
+          <mat-card class="w-20">
+            <mat-card-header class="card-header">
+              <mat-card-title>Innova</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-Innova.png">
+                <p class="br-1"></p>
+                <p class="p-10 text-left">Innova</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+          </mat-card>
+
+
+          <mat-card class="w-20">
+            <mat-card-header class="card-header">
+              <mat-card-title>Innova</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-Innova.png">
+                <p class="br-1"></p>
+                <p class="p-10 text-left">Innova</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+          </mat-card>
+          
+    </div>
+    </div>
