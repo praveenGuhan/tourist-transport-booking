@@ -1,8 +1,8 @@
 .image-container {
-    margin-right: 10px; /* Adjust the value as needed */
+    // margin-right: 10px; /* Adjust the value as needed */
     border-right: 1px solid grey;
     padding-right: 40px; /* Optional: Add some padding to create space between the image and the border */
-    margin-left:15px;
+    // margin-left:15px;
 }
 
 .image-container img {
@@ -11,4 +11,13 @@
 
 .border-right {
     border-right: 1px solid grey;
+}
+
+.menu-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:0 10px;
+    color:white;
+    border-radius: 6px;
 }

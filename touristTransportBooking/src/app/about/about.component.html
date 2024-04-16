@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="grid p-50">
+    <div class="column">
+        <p>BASS TRAVELS</p>
+        <p class="lh-33">BASS TRAVELS is a leading tours and travels agency in Pondicherry. With over 10 years of
+            experience in
+            organizing tours and providing fleet services, we have gathered significant knowledge in designing and
+            offering you the best tour packages to meet your requirements perfectly. We also accommodate custom travel
+            needs that you might have and offer you the best of our services. Our professional drivers will guide and
+            support your tours and trips to ensure that your journey is totally comfortable</p>
+
+        <p class="lh-33">BASS TRAVELS also offers a wide range of travel services such as high-tech fleet services for
+            private tours,
+            seasonal temple tours, corporate holiday outing, business tours and family weddings. Our fares are most
+            reasonable and come with multiple benefits. Our primary objective is to offer a safe, comfortable and happy
+            travel experience!</p>
+    </div>
+    <div class="column">
+        <p>BASS FLEET</p>
+        <img src="../../assets/img/busimg.jpeg" class="bg-size">
+    </div>
+</div>
+
+<div class="grid p-50">
+    <div class="column">
+        <p>Our Services</p>
+        <p class="lh-33">BASS TRAVELS offer ‘luxury fleet rentals with driver‘ & ‘tour packages’ to suit variety of needs & seasons.
+        </p>
+
+        <div *ngFor="let item of services">
+            <div class="d-flex align-item lh-33 br-mission pt-30">
+                <mat-icon class="icon-clr">{{item.icon}}</mat-icon>
+                <span class="pl-10">{{item.value}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <p>Our Mission</p>
+        <p class="lh-33">Our mission is to become the most preferred tours and travel services company in Pondicherry, by delivering
+            quality services to clients consistently through happy travel experiences.</p>
+
+            <div *ngFor="let item of mission">
+                <div class="d-flex align-item lh-33 br-mission pt-30">
+                    <mat-icon class="icon-clr">{{item.icon}}</mat-icon>
+                    <span class="pl-10">{{item.value}}</span>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<app-footer></app-footer>

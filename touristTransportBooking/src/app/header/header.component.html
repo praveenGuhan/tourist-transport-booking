@@ -1,4 +1,4 @@
-<div class="d-flex d-center">
+<div class="d-flex space-between p-50">
     <div class="image-container">
         <img src="../../assets/img/logo.png">
     </div>
@@ -10,5 +10,10 @@
         </div>
     </div>
 </div>
-<app-content></app-content>
-<app-footer></app-footer>
+<div class="d-flex space-between p-50" >
+    <div class="bg-clr menu-bar">
+        <p *ngFor="let item of menu">{{item.value}}</p>
+    </div>
+</div>
+<!-- <app-content></app-content>
+<app-footer></app-footer> -->

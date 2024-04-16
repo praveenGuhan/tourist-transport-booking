@@ -5,10 +5,22 @@
     gap: 10px; /* Gap between grid items */
 }
 .grid-item {
-    padding: 20px;
+    padding: 20px 57px;
     display: flex;
 
 }
+
+.grid-container1 {
+    display: grid;
+    grid-template-rows: auto; /* Two rows */
+    grid-template-columns: auto auto; /* Two columns */
+    gap: 10px; /* Gap between grid items */
+}
+.grid-item1 {
+    padding: 20px;
+
+}
+
 
 .border-menu {
     border: 4px solid #1e73be;
@@ -54,3 +66,8 @@
     font-weight: bold;
     color:#1e73be;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }

@@ -3,9 +3,10 @@ import { Component, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FooterComponent } from '../footer/footer.component';
 import { ContentComponent } from '../content/content.component';
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
-  imports: [FooterComponent]
+  imports: [FooterComponent,MatMenuModule,MatButtonModule]
 })
 export class MyModule {}
 @Component({
@@ -29,6 +30,15 @@ export class HeaderComponent {
   {text:'Corporate/Family tours',subText:'Comfort Travel Assured'},
   {text:'Temple & Family tours',subText:'Organized Easily'},
   {text:'Educational Tours',subText:'Arranged Instantly'},
+ ];
+
+ menu = [
+  {value:'Home'},
+  {value:'About'},
+  {value:'Fleet'},
+  {value:'Fares'},
+  {value:'Booking'},
+  {value:'Contact'},
  ]
 
  
