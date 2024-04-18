@@ -1,0 +1,183 @@
+<app-header></app-header>
+<div class="grid-container p-50 overflow">
+    <div class="grid-item" *ngFor="let item of cars">
+        <mat-card>
+            <mat-card-header class="card-header">
+                <mat-card-title>{{item.carname}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img [src]="item.img">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs{{item.rate}}</button>
+                </div>
+                <p class="p-10 text-left">{{item.carname}}</p>
+                <div class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon iconClr">{{item.icon}}</mat-icon>
+                    <span class="p-10 text-left footer-text">{{item.seater}}</span>
+                </div>
+                <div class="d-flex align-item">
+
+                    <mat-icon class="p-10 arrow-icon iconClr">{{item.icon}}</mat-icon>
+
+                    <span class="p-10 text-left footer-text">{{item.bags}}</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>Etios</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-Etios.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs9</button>
+                </div>
+                <p class="p-10 text-left">Etios</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>Indigo</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-Indigo.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs8.50</button>
+                </div>
+                <p class="p-10 text-left">Indigo</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+  
+    <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>Deluxe Mini-Bus</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-2662.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs12</button>
+                </div>
+                <p class="p-10 text-left">Deluxe Mini-Bus</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>Luxury Coach</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-7277.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs15</button>
+                </div>
+                <p class="p-10 text-left">Luxury Coach</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>17S Tempo Traveller</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-17TT.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs12</button>
+                </div>
+                <p class="p-10 text-left">17S Tempo Traveller</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>Luxury Mini-Bus</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-8726.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs15</button>
+                </div>
+                <p class="p-10 text-left">Luxury Mini-Bus</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>Deluxe Luxury Coach</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-8023.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs35</button>
+                </div>
+                <p class="p-10 text-left">Deluxe Luxury Coach</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="grid-item">
+        <mat-card >
+            <mat-card-header class="card-header">
+                <mat-card-title>14S Tempo Traveller</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="p-0">
+                <img src="../../assets/img/F-7277.png">
+                <p class="br-1"></p>
+                <div class="d-flex d-center">
+                    <button mat-flat-button color="primary" class="btn-position">From Rs16</button>
+                </div>
+                <p class="p-10 text-left">14S Tempo Traveller</p>
+                <div *ngFor="let item of cars" class="d-flex align-item">
+                    <mat-icon class="p-10 arrow-icon">{{item.icon}}</mat-icon>
+                    <p class="p-10 text-left footer-text">{{item.value}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div> -->
+</div>
+
+<app-footer></app-footer>
