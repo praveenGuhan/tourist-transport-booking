@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 @Component({
   selector: 'app-fleet',
   standalone: true,
@@ -14,7 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     FooterComponent,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ],
   templateUrl: './fleet.component.html',
   styleUrl: './fleet.component.scss'

@@ -1,0 +1,34 @@
+<app-header></app-header>
+<!-- <div class="grid-container p-50">
+    <div class="grid-item" *ngFor="let item of fares">
+        <div class="d-flex align-item">
+            <img class="w-50" [src]="item.img">
+            <span>{{item.vehichle}}</span>
+        </div>
+    </div>
+
+</div> -->
+
+<div class="container p-50">
+    <div class="row" *ngFor="let item of fares;let i = index" [ngClass]="{'bg-smoke':i%2 != 0}">
+      <div class="section">
+        <div class="d-flex align-item space_around">
+            <img class="w-50" [src]="item.img">
+            <span class="font-bold fs-18">{{item.vehichle}}</span>
+        </div>
+      </div>
+      <div class="section">
+        <p class="hrsRate">{{item.hrsRate}}</p>
+        <p>{{item.toolCharge}}</p>
+      </div>
+      <div class="section">
+        <p class="hrsRate">{{item.fuel}}</p>
+        <p>{{item.subFuel}}</p>
+      </div>
+      <div class="section">
+        <p class="hrsRate">{{item.kilometer}}</p>
+        <p>{{item.toolCharge}}</p>
+      </div>
+    </div>
+</div>
+<app-footer></app-footer>
