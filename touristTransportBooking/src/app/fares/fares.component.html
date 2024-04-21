@@ -1,14 +1,4 @@
 <app-header></app-header>
-<!-- <div class="grid-container p-50">
-    <div class="grid-item" *ngFor="let item of fares">
-        <div class="d-flex align-item">
-            <img class="w-50" [src]="item.img">
-            <span>{{item.vehichle}}</span>
-        </div>
-    </div>
-
-</div> -->
-
 <div class="container p-50">
     <div class="row" *ngFor="let item of fares;let i = index" [ngClass]="{'bg-smoke':i%2 != 0}">
       <div class="section">

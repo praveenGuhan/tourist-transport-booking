@@ -6,6 +6,7 @@ import { ContentComponent } from './content/content.component';
 import { AboutComponent } from './about/about.component';
 import { FleetComponent } from './fleet/fleet.component';
 import { FaresComponent } from './fares/fares.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
     {path:'home',component:HomeComponent},
@@ -14,6 +15,7 @@ export const routes: Routes = [
     {path:'content',component:ContentComponent},
     {path:'about',component:AboutComponent},
     {path:'fleet',component:FleetComponent},
-    {path:'fares',component:FaresComponent}
+    {path:'fares',component:FaresComponent},
+    {path:'contact',component:ContactComponent}
 
 ];

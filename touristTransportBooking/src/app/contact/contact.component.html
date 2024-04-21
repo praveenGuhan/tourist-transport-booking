@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div class="container p-50">
+    <div class="column">
+        <p>Get In Touch</p>
+
+        <p>Got a custom tour/vehicle requirement? Write to us using the form below. Also feel free to call our office
+            landline or mobile numbers listed or kindly drop in to our office to discuss your requirements in person.
+            We’d be glad to respond to your needs quickly.</p>
+    </div>
+    <div class="column">
+        <p>Contact Details</p>
+        <div class="d-flex align-item" *ngFor="let item of contact">
+            <mat-icon class="iconClr">{{item.icon}}</mat-icon>
+            <p class="pl-10">{{item.value}}</p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

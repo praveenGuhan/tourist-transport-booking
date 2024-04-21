@@ -12,14 +12,14 @@
 </div>
 <div class="d-flex space-between p-50" >
     <div class="bg-clr menu-bar">
-        <p *ngFor="let item of menu">{{item.value}}</p>
+        <p *ngFor="let item of menu" (click)="nextPage(item.value)">{{item.value}}</p>
     </div>
 </div>
 <div class="bg-img">
     <div class="bg-text">
 
         <p>Fleet</p>
-        <p>Home > Fares </p>
+        <p>Home > {{selectedModule}} </p> 
     </div>
 </div>
 <!-- <app-content></app-content>

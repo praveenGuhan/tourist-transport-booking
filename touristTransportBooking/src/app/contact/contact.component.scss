@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns each taking equal space */
+    grid-gap: 30px; /* Adjust gap between columns as needed */
+  }
+  
+  .iconClr {
+    color:#1e73be;
+  }
