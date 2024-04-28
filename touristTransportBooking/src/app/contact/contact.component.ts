@@ -22,8 +22,8 @@ import { HeaderComponent } from '../header/header.component';
 })
 export class ContactComponent {
   contact = [
-    {value:'#20,21,ECR, 100FT, ROAD, KARUVADIKUPPAM, PONDICHERRY-605008',icon:'location_on'},
-    {value:'+919443279915 | +919943868585',icon:'phone'},
-    {value:'bookings@basstravels.in',icon:'email'},
+    {value:'#12,IIIrd Main Road, Bharathidasan Nagar, Mudaliarpet, Puducherry. 605004',icon:'location_on'},
+    {value:'+919790283980 | +919443499351',icon:'phone'},
+    {value:'bookings@jeyasritravels.in',icon:'email'},
   ]
 }
