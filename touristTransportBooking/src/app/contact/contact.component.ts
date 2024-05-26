@@ -5,6 +5,9 @@ import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from '../header/header.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +18,8 @@ import { HeaderComponent } from '../header/header.component';
     CommonModule,
     FooterComponent,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule, MatInputModule, MatIconModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
